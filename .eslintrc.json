@@ -1,0 +1,52 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+      "airbnb",
+      "prettier",
+      "prettier/react"
+  ],
+  "plugins": [
+      "react-native",
+      "prettier"
+  ],
+  "globals": {
+      "it": true,
+      "expect": true
+  },
+  "rules": {
+      "prettier/prettier": [
+          "error",
+          {
+              "singleQuote": true,
+              "semi": false,
+              "trailingComma": "es5"
+          }
+      ],
+      "react/jsx-filename-extension": [
+          "error",
+          {
+              "extensions": [
+                  ".js",
+                  ".jsx"
+              ]
+          }
+      ],
+      "arrow-body-style": [
+          "error",
+          "as-needed"
+      ],
+      "no-global-assign": [
+          "error",
+          {
+              "exceptions": [
+                  "setInterval",
+                  "setTimeout",
+                  "clearInterval",
+                  "clearTimeout"
+              ]
+          }
+      ],
+      "react-native/no-unused-styles": 2,
+      "react-native/split-platform-components": 2
+  }
+}
